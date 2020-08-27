@@ -1,5 +1,5 @@
 ---
-invoice-nr: 2015-11-04
+invoice-nr: 2020-08-20
 author: Max Mustermann
 city: Musterstadt
 from:
@@ -8,9 +8,8 @@ from:
 to:
 - Erika Mustermann
 - Musterallee 1
-- 12345 Musterstadt
-- Germany
-VAT: 20
+- 12345 Zürich
+- Switzerland
 service:
 - description: The first service provided
   price: 320.00
@@ -37,13 +36,13 @@ closingnote: |
     Best regards,
 
 # Invoice settings
-currency: EUR
+currency: CHF
 # commasep: true
 lang: english
 
 # Typography and layout
-seriffont: Hoefler Text
-sansfont: Helvetica Neue
+seriffont: Liberation Serif
+sansfont: Liberation Serif
 fontsize: 10pt
 geometry: a4paper, left=43mm, right=43mm, top=51mm, bottom=17mm
 # letterhead: true # To include personalized letterheads
