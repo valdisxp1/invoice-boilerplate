@@ -10,6 +10,7 @@ to:
 - Musterallee 1
 - 12345 Zürich
 - Switzerland
+VAT: 20
 service:
 - description: The first service provided
   price: 320.00
@@ -37,6 +38,8 @@ closingnote: |
 
 # Invoice settings
 currency: CHF
+payment-currency: EUR
+exchange-rate: 0.93
 # commasep: true
 lang: english
 

@@ -135,7 +135,11 @@ $if(commasep)$\STsetdecimalsep{,}$endif$ % Use comma as decimal separator
     @ & @ \multicolumn{1}{r}{Subtotal:}                & :={sum(c1:[0,-1])} \\ \hhline{~~-}
     @ & @ \multicolumn{1}{r}{VAT $VAT$\%:}               & $VAT$/100*[0,-1] \\ \hhline{~~-}
   $endif$
-  @ & @ \multicolumn{1}{r}{\textbf{Total:}}   & \textbf{:={$if(VAT)$[0,-1]+[0,-2]$else$sum(c1:[0,-1])$endif$}} \\ \hhline{~~-}
+  @ & @ \multicolumn{1}{r}{\textbf{Total in $currency$:}}   & \textbf{:={$if(VAT)$[0,-1]+[0,-2]$else$sum(c1:[0,-1])$endif$}} \\ \hhline{~~-}
+  $if(payment-currency)$
+  @ & @ \multicolumn{1}{r}{1 $payment-currency$ = $exchange-rate$ $currency$:}   &  \\
+    @ & @ \multicolumn{1}{r}{\textbf{Total in $payment-currency$:}}   & \textbf{:={[0,-2]*$exchange-rate$]}} \\ \hhline{~~-}
+  $endif$
 \end{spreadtab}
 
 
