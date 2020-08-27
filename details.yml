@@ -39,7 +39,7 @@ closingnote: |
 # Invoice settings
 currency: CHF
 payment-currency: EUR
-exchange-rate: 0.93
+exchange-rate: 0.9324
 # commasep: true
 lang: english
 
