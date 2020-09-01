@@ -39,7 +39,9 @@ closingnote: |
 # Invoice settings
 currency: CHF
 payment-currency: EUR
-exchange-rate: 0.9324
+# European Central Bank's rate
+# curl https://api.exchangeratesapi.io/2020-08-31 | jq .rates.CHF
+exchange-rate: 1.0774
 # commasep: true
 lang: english
 
